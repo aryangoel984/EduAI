@@ -1,0 +1,76 @@
+Overall Objective:
+Design and build a modern AI-powered education platform that is general to education, with a focus on the following core capabilities:
+1. Personalized AI Tutors
+   * Real-time intelligent tutors for doubt solving.
+   * Adaptive learning based on student progress and needs.
+2. Automated Assessment Tools
+   * Tools to automatically generate, deliver, grade, and analyze tests and assignments.
+   * Support for MCQs, subjective answers, and other assessment formats.
+3. Student Risk Prediction
+   * AI models to identify students at risk of falling behind or dropping out.
+   * Provide actionable recommendations to educators for early interventions.
+Target Audience:
+* K-12 schools (private and public)
+* Higher education institutions (colleges and universities)
+* Online education platforms
+* Coaching institutes
+* Corporate training and professional development programs
+* Educators and learners worldwide
+Vision:
+Build a scalable, accessible, AI-first education platform that empowers learners and educators through personalization, automation, and actionable insights — usable across educational levels and contexts.
+Core Platform Modules:
+1️⃣ Personalized AI Tutors
+* Real-time chat-based or voice-based AI tutors.
+* Context-aware doubt solving.
+* Adaptive learning pathways personalized to each student.
+* Supports multiple subjects, grades, and languages.
+2️⃣ Automated Assessment Tools
+* Test generation (customizable by subject, difficulty, competency).
+* Auto-grading of objective and subjective questions.
+* Analytics dashboard for teachers: performance trends, gaps, and strengths.
+* Feedback loop to personalize future learning.
+3️⃣ Student Risk Prediction
+* Data ingestion from student interactions, grades, attendance, engagement.
+* AI models to predict risk of poor performance or dropout.
+* Explainable insights — why a student is flagged at risk.
+* Intervention planner: recommended next actions for educators.
+Platform Design Guidelines:
+🎨 UI/UX & Visual Theme
+* Clean, modern, professional design.
+* Color Palette:
+   * Light backgrounds, vibrant accents (sky blue, deep green, coral, purple).
+   * Avoid overly corporate feel; it should still feel welcoming to students and teachers.
+* Typography:
+   * Modern sans-serif fonts (e.g., Inter, Poppins, Roboto).
+   * Clear visual hierarchy, legible across devices.
+* Icons & Imagery:
+   * Use abstract, inclusive educational visuals.
+   * Represent students of different ages and backgrounds.
+🌍 Language & Tone:
+* Friendly and professional.
+* Inclusive of diverse learners and educators.
+* Use phrases like:
+   * "Empowering educators and learners with AI"
+   * "AI-powered teaching and learning"
+   * "Personalized, automated, and insightful education tools"
+* Avoid niche references to specific geographies or income levels.
+🔍 Accessibility:
+* Fully responsive (desktop, tablet, mobile).
+* WCAG-compliant accessibility.
+* Multilingual support from the start (or roadmap).
+Platform Structure:
+Homepage:
+* Hero section explaining the mission of AI in education.
+* Features overview (AI Tutors, Assessment Tools, Risk Prediction).
+* Testimonials and use cases.
+Modules:
+* Personalized AI Tutor Module
+* Automated Assessment Module
+* Student Risk Prediction Module
+For Educators:
+* How the platform helps teachers, schools, and institutions.
+For Learners:
+* How learners can benefit from personalized and adaptive learning.
+Admin & Analytics:
+* Admin dashboard for managing content and users.
+* Advanced analytics and insights. make platform next js,typescript,tailwind
