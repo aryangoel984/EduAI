@@ -13,7 +13,7 @@ import {
   Shield, 
   Bell,
   Settings,
-  User,
+  User as UserIcon,
   Calendar,
   Target
 } from "lucide-react";
@@ -86,7 +86,7 @@ export default function Dashboard() {
       { label: "At-Risk Students", value: "8", icon: Calendar }
     ],
     admin: [
-      { label: "Total Users", value: "2,547", icon: User },
+      { label: "Total Users", value: "2,547", icon: UserIcon },
       { label: "Active Institutions", value: "45", icon: BookOpen },
       { label: "System Uptime", value: "99.9%", icon: Shield },
       { label: "Monthly Sessions", value: "18.2K", icon: Target }
@@ -125,7 +125,7 @@ export default function Dashboard() {
         <Card className="mb-8">
           <CardHeader>
             <CardTitle className="flex items-center space-x-2">
-              <User className="h-5 w-5 text-edu-blue" />
+              <UserIcon className="h-5 w-5 text-edu-blue" />
               <span>View Dashboard As</span>
             </CardTitle>
           </CardHeader>
@@ -254,7 +254,7 @@ export default function Dashboard() {
                 {selectedRole === "admin" && (
                   <>
                     <Button className="w-full justify-start bg-edu-purple hover:bg-edu-purple/90" size="sm">
-                      <User className="h-4 w-4 mr-2" />
+                      <UserIcon className="h-4 w-4 mr-2" />
                       Manage Users
                     </Button>
                     <Button variant="outline" className="w-full justify-start" size="sm">
