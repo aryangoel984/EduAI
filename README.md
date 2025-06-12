@@ -16,7 +16,7 @@ A comprehensive AI-powered education platform featuring personalized tutors, aut
 1. Clone this repository
 2. Run `npm install`
 3. Run `npm run dev`
-4. Open http://localhost:5000
+4. Open http://localhost:3000
 
 ### Free Deployment Options
 
