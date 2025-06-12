@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Star, Users, Clock, Languages, Brain, MessageSquare, ClipboardCheck, TrendingUp, ChevronRight } from "lucide-react";
+import { useLocation } from "wouter";
 
 export default function Home() {
+  const [, setLocation] = useLocation();
   const features = [
     {
       icon: MessageSquare,
@@ -324,10 +326,10 @@ export default function Home() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button size="lg" className="bg-white text-edu-blue hover:bg-gray-100">
+            <Button size="lg" className="bg-white text-edu-blue hover:bg-gray-100" onClick={() => setLocation('/dashboard')}>
               Start Your Free Trial
             </Button>
-            <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10">
+            <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10" onClick={() => setLocation('/ai-tutor')}>
               Schedule a Demo
             </Button>
           </div>

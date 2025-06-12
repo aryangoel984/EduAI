@@ -9,6 +9,7 @@ import AITutor from "@/pages/AITutor";
 import Assessments from "@/pages/Assessments";
 import Analytics from "@/pages/Analytics";
 import Dashboard from "@/pages/Dashboard";
+import Saarthi from "@/pages/Saarthi";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -21,6 +22,7 @@ function Router() {
         <Route path="/assessments" component={Assessments} />
         <Route path="/analytics" component={Analytics} />
         <Route path="/dashboard" component={Dashboard} />
+        <Route path="/saarthi" component={Saarthi} />
         <Route component={NotFound} />
       </Switch>
     </div>
