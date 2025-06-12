@@ -14,6 +14,7 @@ export default function Navigation() {
     { href: "/ai-tutor", label: "AI Tutor" },
     { href: "/assessments", label: "Assessments" },
     { href: "/analytics", label: "Analytics" },
+    { href: "/saarthi", label: "Saarthi" },
     { href: "/dashboard", label: "Dashboard" },
   ];
 

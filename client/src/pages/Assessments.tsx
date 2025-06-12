@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
+import { useLocation } from "wouter";
 import AssessmentBuilder from "@/components/assessment/AssessmentBuilder";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -12,9 +13,11 @@ import { formatDate } from "@/lib/utils";
 import type { Assessment } from "@shared/schema";
 
 export default function Assessments() {
+  const [, setLocation] = useLocation();
   const [searchTerm, setSearchTerm] = useState("");
   const [filterSubject, setFilterSubject] = useState("all");
   const [filterStatus, setFilterStatus] = useState("all");
+  const [showCreateForm, setShowCreateForm] = useState(false);
 
   const { data: assessments = [], isLoading } = useQuery<Assessment[]>({
     queryKey: ["/api/assessments"],
@@ -152,7 +155,10 @@ export default function Assessments() {
                         ? "Try adjusting your filters to see more results."
                         : "Create your first assessment to get started."}
                     </p>
-                    <Button className="bg-edu-blue hover:bg-edu-blue/90">
+                    <Button 
+                      className="bg-edu-blue hover:bg-edu-blue/90"
+                      onClick={() => setShowCreateForm(true)}
+                    >
                       <Plus className="h-4 w-4 mr-2" />
                       Create Assessment
                     </Button>
