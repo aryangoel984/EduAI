@@ -78,10 +78,19 @@ export default function Home() {
                 Transform learning experiences with personalized AI tutors, automated assessments, and predictive analytics that help educators and learners achieve their full potential.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <Button size="lg" className="bg-edu-blue hover:bg-edu-blue/90 text-white">
+                <Button 
+                  size="lg" 
+                  className="bg-edu-blue hover:bg-edu-blue/90 text-white"
+                  onClick={() => setLocation('/dashboard')}
+                >
                   Start Free Trial
                 </Button>
-                <Button size="lg" variant="outline" className="border-edu-blue text-edu-blue hover:bg-edu-blue/5">
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="border-edu-blue text-edu-blue hover:bg-edu-blue/5"
+                  onClick={() => setLocation('/ai-tutor')}
+                >
                   Request Demo
                 </Button>
               </div>

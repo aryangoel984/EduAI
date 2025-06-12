@@ -17,7 +17,7 @@ export default function Assessments() {
   const [searchTerm, setSearchTerm] = useState("");
   const [filterSubject, setFilterSubject] = useState("all");
   const [filterStatus, setFilterStatus] = useState("all");
-  const [showCreateForm, setShowCreateForm] = useState(false);
+  const [activeTab, setActiveTab] = useState("manage");
 
   const { data: assessments = [], isLoading } = useQuery<Assessment[]>({
     queryKey: ["/api/assessments"],
@@ -79,7 +79,7 @@ export default function Assessments() {
         </div>
 
         {/* Tabs */}
-        <Tabs defaultValue="manage" className="space-y-6">
+        <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
           <TabsList className="grid w-full lg:w-auto grid-cols-2 lg:grid-cols-3">
             <TabsTrigger value="manage" className="flex items-center space-x-2">
               <ClipboardCheck className="h-4 w-4" />
@@ -157,7 +157,7 @@ export default function Assessments() {
                     </p>
                     <Button 
                       className="bg-edu-blue hover:bg-edu-blue/90"
-                      onClick={() => setShowCreateForm(true)}
+                      onClick={() => setActiveTab("create")}
                     >
                       <Plus className="h-4 w-4 mr-2" />
                       Create Assessment
