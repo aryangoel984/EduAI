@@ -57,4 +57,4 @@ A comprehensive AI-powered education platform featuring personalized tutors, aut
 - Unlimited bandwidth
 - Zero maintenance required
 
-Your education platform will be live and accessible worldwide within minutes of deployment!
+Your education platform will be live and accessible worldwide within minutes of deployment!# EduAI
