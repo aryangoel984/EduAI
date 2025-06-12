@@ -325,7 +325,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-edu-blue to-edu-purple">
+      <section className="py-20 bg-gradient-to-br from-blue-600 to-purple-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
             Ready to Transform Education with AI?
@@ -335,7 +335,7 @@ export default function Home() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button size="lg" className="bg-white text-edu-blue hover:bg-gray-100" onClick={() => setLocation('/dashboard')}>
+            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100" onClick={() => setLocation('/dashboard')}>
               Start Your Free Trial
             </Button>
             <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10" onClick={() => setLocation('/ai-tutor')}>
